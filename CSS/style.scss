@@ -1,62 +1,97 @@
+@import url(/assets/fonts/Switzer/WEB/css/switzer.css);
+
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "switzer", sans-serif;
   box-sizing: border-box;
+  color: #383838;
 }
 
+body {
+  background-color: #f5f5f5;
+}
 
-.inline-block {
-  display: inline-block;
-  vertical-align: top;
+.container {
+  width: 960px;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
-   img {
-    height:50px;
-    width: auto;
-   }
+  height: 50px;
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 nav {
   display: flex;
   align-items: center;
-  text-align: right;
-  width: 73%;
-  padding: 1%;
   ul {
-    // width: 50%;
-    margin-left: auto;
+    margin: 0;
     li {
+      list-style: none;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 500;
       padding: 0 1rem;
     }
   }
 }
-.heroImg {
+
+section {
   display: flex;
-  background-color: #F5F5F5;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  padding: 2rem;
-  div {
-    text-align: center;
+  padding: 8rem 2rem;
+}
+
+#hero {
+  min-height: 600px;
+  p {
+    font-family: Switzer;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
   }
-  img {
-    width: 200px;
+  h1 {
+    font-family: Switzer;
+    font-size: 96px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    span {
+      color: #1abcfe;
+    }
   }
 }
 
-.content {
-  height: 500px;
-  margin: 0 auto;
+button {
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 32px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  &.primary {
+    background: #1abcfe;
+  }
 }
+
+#projects {
+  height: 500px;
+background-color: white;}
 
 footer {
   display: flex;
@@ -67,7 +102,7 @@ footer {
     display: inline-block;
     vertical-align: top;
 
-    li  {
+    li {
       padding: 0 1rem;
     }
   }
