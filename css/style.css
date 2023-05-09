@@ -83,6 +83,7 @@ button {
   border: none;
   cursor: pointer;
   font-size: 24px;
+  margin-top: 1rem;
 }
 button.primary {
   background: #0c9cd7;
@@ -237,6 +238,52 @@ footer ul li {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  section {
+    padding: 4rem 0rem;
+  }
+  .container {
+    width: 100%;
+  }
+  header ul li {
+    font-size: 16px;
+  }
+  #hero {
+    min-height: auto;
+  }
+  #hero p {
+    font-size: 24px;
+  }
+  #hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  #hero h1 span {
+    color: #0c9cd7;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  .title img {
+    width: 32px;
+    height: 32px;
+  }
+  .title h2 {
+    font-size: 24px;
+  }
+  .tag-list {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {
